@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #262a2f;
+}
+
+.container{
+    width: 400px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+} 
+
+.container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+
+.container input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border-radius: 5px ;
+}
+
+/* CSS */
+.btn{
+    width: 100%;
+    text-align: center;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  margin-top: 10px;
+  padding: 10px 120px;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1C84FF;
+}
+#imgBox{
+  border-radius: 8px;
+}
+
+#imgBox img{
+    width: 50%;
+    padding: 10px;
+    
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px 0;
+}
+
+.error{
+    animation: shake 0.1s linear 8;
+}
+@keyframes shake {
+    0%{
+        transform:translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
