@@ -60,10 +60,7 @@ async function checkWeater(city) {
 
 const weatherBox = $(".weather");
 const searchBox = $(".search input");
-// if(searchBox.length < 1){
-//   searchBox.css({"border":"1px solid red"});
-//   searchBox.attr("placeholder","Enter city/ country name")
-// }
+
 const city = $(".search-btn").click(function onclick_func() {
   checkWeater(searchBox.val());
   weatherBox.css("display","block");
